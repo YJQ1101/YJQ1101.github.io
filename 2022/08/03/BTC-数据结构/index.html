@@ -6,19 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>BTC-密码学原理 | Hexo</title>
+  <title>BTC-数据结构 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="BTC 主要用到了 哈希 和签名 两大技术 哈希函数哈希函数需要满足三大特性：1、碰撞特性（collision resistance）；2、隐秘性（Hiding）；3、谜题友好（puzzle friendly） 1、碰撞特性（collision resistance）输入两个输入值X，Y，经过哈希函数之后得到H(X)&#x3D;H(Y)，即为哈希碰撞 假设输入x1，哈希值为H(x1)，此时很难找到">
+  <meta name="description" content="BTC 数据结构组成主要由 区块链 和Merkle 组成 具体长这样：  哈希指针比特币中最基本的结构就是区块链，区块就是一个个区块组成的链表。区块链与普通的链表的区别为：用哈希指针代替了普通的指针  我们会用一个指针指向信息存储的位置，同时我们会随着指针一起存储信息的加密哈希值。因此常规指针会指引检索信息，而哈希指针将会让我们取回信息，它还可以让我们验证信息是否发生改变。  后一个 H（）是将前">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BTC-密码学原理">
-<meta property="og:url" content="http://example.com/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/index.html">
+<meta property="og:title" content="BTC-数据结构">
+<meta property="og:url" content="http://example.com/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="BTC 主要用到了 哈希 和签名 两大技术 哈希函数哈希函数需要满足三大特性：1、碰撞特性（collision resistance）；2、隐秘性（Hiding）；3、谜题友好（puzzle friendly） 1、碰撞特性（collision resistance）输入两个输入值X，Y，经过哈希函数之后得到H(X)&#x3D;H(Y)，即为哈希碰撞 假设输入x1，哈希值为H(x1)，此时很难找到">
+<meta property="og:description" content="BTC 数据结构组成主要由 区块链 和Merkle 组成 具体长这样：  哈希指针比特币中最基本的结构就是区块链，区块就是一个个区块组成的链表。区块链与普通的链表的区别为：用哈希指针代替了普通的指针  我们会用一个指针指向信息存储的位置，同时我们会随着指针一起存储信息的加密哈希值。因此常规指针会指引检索信息，而哈希指针将会让我们取回信息，它还可以让我们验证信息是否发生改变。  后一个 H（）是将前">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-08-03T09:43:36.888Z">
-<meta property="article:modified_time" content="2022-08-03T13:59:38.644Z">
+<meta property="og:image" content="http://example.com/....%5Cpublic%5Cimg%5C28ddd68a529963ca7ed1d43d1c6a799a.png">
+<meta property="og:image" content="http://example.com/....%5Cpublic%5Cimg%5C20210510193131333.png">
+<meta property="og:image" content="http://example.com/....%5Cpublic%5Cimg%5C20210510195123278.png">
+<meta property="article:published_time" content="2022-08-03T14:12:42.931Z">
+<meta property="article:modified_time" content="2022-08-03T16:35:32.399Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/....%5Cpublic%5Cimg%5C28ddd68a529963ca7ed1d43d1c6a799a.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,35 +158,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-BTC-密码学原理" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-BTC-数据结构" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      BTC-密码学原理
+      BTC-数据结构
     </h1>
   
 
         
-        <a href="/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/" class="archive-article-date">
-  	<time datetime="2022-08-03T09:43:36.888Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
+        <a href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-article-date">
+  	<time datetime="2022-08-03T14:12:42.931Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>BTC 主要用到了 <code>哈希</code> 和<code>签名</code> 两大技术</p>
-<h3 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h3><p>哈希函数需要满足三大特性：1、碰撞特性（collision resistance）；2、隐秘性（Hiding）；3、谜题友好（puzzle friendly）</p>
-<h5 id="1、碰撞特性（collision-resistance）"><a href="#1、碰撞特性（collision-resistance）" class="headerlink" title="1、碰撞特性（collision resistance）"></a>1、碰撞特性（collision resistance）</h5><p>输入两个输入值X，Y，经过哈希函数之后得到H(X)&#x3D;H(Y)，即为哈希碰撞</p>
-<p>假设输入x1，哈希值为H(x1)，此时很难找到一个x2，使得H(x1)&#x3D;H(x2)，则称该哈希函数防碰撞性强</p>
-<h5 id="2、隐秘性（Hiding）"><a href="#2、隐秘性（Hiding）" class="headerlink" title="2、隐秘性（Hiding）"></a>2、隐秘性（Hiding）</h5><p>哈希函数的计算过程是单向的，不可逆的。但前提要满足输入控件足够大，且分布均匀。</p>
-<h5 id="3、谜题友好（puzzle-friendly）"><a href="#3、谜题友好（puzzle-friendly）" class="headerlink" title="3、谜题友好（puzzle friendly）"></a>3、谜题友好（puzzle friendly）</h5><p>我们限定输出的哈希值在一定范围内，即H(block header + nonce) &lt; target （block header是区块链的链头），这个确定链头范围的过程即为挖矿。</p>
-<h3 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h3><p>在比特币中开户是在本地创立一个公私钥匙对</p>
-<p>公钥用来加密以及验证签名，私钥用来解密和签名</p>
-<p>公钥相当于银行账号，私钥相当于银行密码</p>
+        <p>BTC 数据结构组成主要由 <code>区块链</code> 和<code>Merkle</code> 组成</p>
+<p>具体长这样：</p>
+<p><img src="/....%5Cpublic%5Cimg%5C28ddd68a529963ca7ed1d43d1c6a799a.png" alt="28ddd68a529963ca7ed1d43d1c6a799a"></p>
+<h2 id="哈希指针"><a href="#哈希指针" class="headerlink" title="哈希指针"></a>哈希指针</h2><p>比特币中最基本的结构就是区块链，区块就是一个个区块组成的链表。区块链与普通的链表的区别为：用哈希指针代替了普通的指针</p>
+<p><img src="/....%5Cpublic%5Cimg%5C20210510193131333.png" alt="20210510193131333"></p>
+<p>我们会用一个指针指向信息存储的位置，同时我们会随着指针一起存储信息的加密哈希值。因此常规指针会指引检索信息，而哈希指针将会让我们取回信息，它还可以让我们验证信息是否发生改变。</p>
+<p><img src="/....%5Cpublic%5Cimg%5C20210510195123278.png" alt="20210510195123278"></p>
+<p>后一个 H（）是将前一个区块（ data 和 H（））的内容计算 H（），实现 tamper-evident log（篡改证明记录）</p>
+<h3 id="Merkle树"><a href="#Merkle树" class="headerlink" title="Merkle树"></a>Merkle树</h3><p>默克尔树与普通的树的区别也是用哈希指针代替了普通指针。树的最后一层是数据块（data blocks），上面的内部节点都是哈希指针，第一层是根节点，其中根节点的区块也可取哈希为根哈希。</p>
+<p>比特币中的各个区块之间用哈希指针连接，每个区块所包含的交易形成merkle tree，最下面一层的每个数据块实际上是一个交易</p>
+<p>比特币中的节点分为两类：</p>
+<blockquote>
+<p>全节点：保存整个区块的内容，包括块头和块身。</p>
+<p>轻节点：只有块头。  </p>
+</blockquote>
+<p>当需要向一个轻节点证明某交易是写入区块链时，需要使用merkle tree提供的merkle proof找到该交易的根节点与轻节点中的根节点进行对比，若一致则证明该交易写入了区块链。</p>
+<blockquote>
+<p>Merkle proof：从交易所在的区块一直往上到根节点的路径。</p>
+</blockquote>
 
       
 
@@ -262,7 +276,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,15 +290,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          BTC-数据结构
-        
-      </div>
-    </a>
   
+    <a href="/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">BTC-密码学原理</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

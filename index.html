@@ -152,6 +152,87 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-BTC-数据结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">BTC-数据结构</a>
+    </h1>
+  
+
+        
+        <a href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-article-date">
+  	<time datetime="2022-08-03T14:12:42.931Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>BTC 数据结构组成主要由 <code>区块链</code> 和<code>Merkle</code> 组成</p>
+<p>具体长这样：</p>
+<p><img src="/....%5Cpublic%5Cimg%5C28ddd68a529963ca7ed1d43d1c6a799a.png" alt="28ddd68a529963ca7ed1d43d1c6a799a"></p>
+<h2 id="哈希指针"><a href="#哈希指针" class="headerlink" title="哈希指针"></a>哈希指针</h2><p>比特币中最基本的结构就是区块链，区块就是一个个区块组成的链表。区块链与普通的链表的区别为：用哈希指针代替了普通的指针</p>
+<p><img src="/....%5Cpublic%5Cimg%5C20210510193131333.png" alt="20210510193131333"></p>
+<p>我们会用一个指针指向信息存储的位置，同时我们会随着指针一起存储信息的加密哈希值。因此常规指针会指引检索信息，而哈希指针将会让我们取回信息，它还可以让我们验证信息是否发生改变。</p>
+<p><img src="/....%5Cpublic%5Cimg%5C20210510195123278.png" alt="20210510195123278"></p>
+<p>后一个 H（）是将前一个区块（ data 和 H（））的内容计算 H（），实现 tamper-evident log（篡改证明记录）</p>
+<h3 id="Merkle树"><a href="#Merkle树" class="headerlink" title="Merkle树"></a>Merkle树</h3><p>默克尔树与普通的树的区别也是用哈希指针代替了普通指针。树的最后一层是数据块（data blocks），上面的内部节点都是哈希指针，第一层是根节点，其中根节点的区块也可取哈希为根哈希。</p>
+<p>比特币中的各个区块之间用哈希指针连接，每个区块所包含的交易形成merkle tree，最下面一层的每个数据块实际上是一个交易</p>
+<p>比特币中的节点分为两类：</p>
+<blockquote>
+<p>全节点：保存整个区块的内容，包括块头和块身。</p>
+<p>轻节点：只有块头。  </p>
+</blockquote>
+<p>当需要向一个轻节点证明某交易是写入区块链时，需要使用merkle tree提供的merkle proof找到该交易的根节点与轻节点中的根节点进行对比，若一致则证明该交易写入了区块链。</p>
+<blockquote>
+<p>Merkle proof：从交易所在的区块一直往上到根节点的路径。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-BTC-密码学原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
