@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022/8 | Hexo</title>
+  <title>北京大学肖臻老师《区块链技术与应用》公开课笔记10——BTC问题篇 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/08/index.html">
+  <meta name="description" content="本篇内容为记录篇  转账交易时候，如果接收者不在线(没有连在比特币网络上)怎么办？转账交易只需要在区块链上记录，将某账户比特币转到另一账户，而接收方是否在线并无影响。  假设某全节点收到某个转账交易，会不会有可能转账交易中收款人地址该全节点从未听过。可能，因为比特币账户只需要本地产生即可。只有该账户第一次收到钱时，其他节点才能知道该节点的存在。  如果账户私钥丢失怎么办？ 没有办法。因为比特币是去">
+<meta property="og:type" content="article">
+<meta property="og:title" content="北京大学肖臻老师《区块链技术与应用》公开课笔记10——BTC问题篇">
+<meta property="og:url" content="http://example.com/2022/08/08/BTC-%E9%97%AE%E7%AD%94/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本篇内容为记录篇  转账交易时候，如果接收者不在线(没有连在比特币网络上)怎么办？转账交易只需要在区块链上记录，将某账户比特币转到另一账户，而接收方是否在线并无影响。  假设某全节点收到某个转账交易，会不会有可能转账交易中收款人地址该全节点从未听过。可能，因为比特币账户只需要本地产生即可。只有该账户第一次收到钱时，其他节点才能知道该节点的存在。  如果账户私钥丢失怎么办？ 没有办法。因为比特币是去">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-08T09:12:36.190Z">
+<meta property="article:modified_time" content="2022-08-09T15:51:00.905Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,289 +154,185 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-BTC-问答" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      北京大学肖臻老师《区块链技术与应用》公开课笔记10——BTC问题篇
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/08/BTC-%E5%8C%BF%E5%90%8D%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2022-08-08T15:02:25.681Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/08/BTC-%E9%97%AE%E7%AD%94/" class="archive-article-date">
+        
+        <a href="/2022/08/08/BTC-%E9%97%AE%E7%AD%94/" class="archive-article-date">
   	<time datetime="2022-08-08T09:12:36.190Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/08/BTC-%E9%97%AE%E7%AD%94/">北京大学肖臻老师《区块链技术与应用》公开课笔记10——BTC问题篇</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本篇内容为记录篇</p>
+<ul>
+<li><p>转账交易时候，如果接收者不在线(没有连在比特币网络上)怎么办？<br>转账交易只需要在区块链上记录，将某账户比特币转到另一账户，而接收方是否在线并无影响。</p>
+</li>
+<li><p>假设某全节点收到某个转账交易，会不会有可能转账交易中收款人地址该全节点从未听过。<br>可能，因为比特币账户只需要本地产生即可。只有该账户第一次收到钱时，其他节点才能知道该节点的存在。</p>
+</li>
+<li><p>如果账户私钥丢失怎么办？</p>
+<p>没有办法。因为比特币是去中心化货币，没有第三方中心机构可以重置密码，所以账户上的钱也就变成了死钱。<br>通过加密货币交易所(中心化机构)，一般需要提供身份证明，如果忘记私钥可以找交易所申请追回私钥。但目前这类货币的交易所，尚且处于缺少监管的状态，并不一定具有可信力。而且，其本身仅起到“中介”作用，与该提问的回答“私钥丢失无法追回里面的比特币”并不冲突。<br>在历史上，有很多次交易所被黑客攻击偷走大量加密货币的事情，其中最著名的为Mt. GOX事件。该交易所曾经为全球最大比特币交易所，交易量占到全球比特币交易量的70%左右，设于日本。后来由于被攻击丢失大量比特币，导致交易所破产，其CEO被判刑入狱。<br>此外，也有交易所监守自盗，工作人员卷款跑路</p>
+</li>
+<li><p>私钥泄露怎么办？</p>
+<p>尽快将剩余BTC转到其他安全账户上，没有第三方中心机构重置密码或冻结账户，只能自己对自己负责。<br> BTC系统中账户便是公私钥对，密码就是私钥，无法更改。</p>
+</li>
+<li><p>转账写错地址怎么办？</p>
+<p>没有办法，只能自认倒霉，无法取消已经发布的交易。如果转入不存在地址，则该部分比特币便成为了死钱。当然，比特币系统中UTXO会永久保存该交易，记录该并不存在的地址。因此，对全节点来说，这是不友好的。</p>
+</li>
+<li><p>之前在BTC脚本中介绍了OP_RETURN指令，我们提到，这种方法为普通用户提供了一个向比特币网络中写入想要一直保存的内容。但OP_RETURN执行结果是无条件返回错误，而交易返回错误，区块又怎么会包含它？区块链又如何会接收这个区块？</p>
+</li>
+<li><p>BTC系统挖矿，会不会有矿工“偷”答案？例如：某个矿工发现其他矿工发布了nonce，收到后验证该区块合法，将该nonce作为自己找到的nonce发布出去。<br>实际上这是不可能的。发布的区块中包含铸币交易，其收款人地址为挖到矿的矿工地址，如果要偷答案，需要修改该收款地址，而地址改变，铸币交易内容也发生改变，从而引发Merkle Tree根哈希值改变。从而导致原本的nonce作废。也就是说，不可能会“偷”答案。</p>
+</li>
+<li><p>交易费是交易者为了自己交易可以上链而给出的“小费”，那么如何得知哪个矿工可以挖到矿？<br>事先无需知道谁会挖到矿，交易中总输入和总输出差额就是交易费。哪个矿工挖到矿，在打包交易时，可以将这些交易费收集起来作为自己获得的交易费。</p>
+</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/08/08/BTC-%E9%97%AE%E7%AD%94/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/" class="archive-article-date">
-  	<time datetime="2022-08-07T08:52:19.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-07</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2022/08/08/BTC-%E5%8C%BF%E5%90%8D%E6%80%A7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">北京大学肖臻老师《区块链技术与应用》公开课笔记8——BTC比特币脚本篇</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/">北京大学肖臻老师《区块链技术与应用》公开课笔记8——BTC比特币脚本篇</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2022-08-07T06:36:53.598Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/">北京大学肖臻老师《区块链技术与应用》公开课笔记8——BTC比特币脚本篇</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF/" class="archive-article-date">
-  	<time datetime="2022-08-06T14:59:56.821Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF/">北京大学肖臻老师《区块链技术与应用》公开课笔记7——BTC挖矿篇</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF%E9%9A%BE%E5%BA%A6/" class="archive-article-date">
-  	<time datetime="2022-08-06T08:54:17.110Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF%E9%9A%BE%E5%BA%A6/">北京大学肖臻老师《区块链技术与应用》公开课笔记6——BTC挖矿难度篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/06/BTC-%E7%BD%91%E7%BB%9C/" class="archive-article-date">
-  	<time datetime="2022-08-06T08:06:02.491Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/06/BTC-%E7%BD%91%E7%BB%9C/">北京大学肖臻老师《区块链技术与应用》公开课笔记5——BTC网络篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/05/BTC-%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-  	<time datetime="2022-08-05T14:24:59.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/05/BTC-%E5%AE%9E%E7%8E%B0/">北京大学肖臻老师《区块链技术与应用》公开课笔记4——BTC共识协议篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/05/BTC-%E5%8D%8F%E8%AE%AE/" class="archive-article-date">
-  	<time datetime="2022-08-05T11:23:59.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/05/BTC-%E5%8D%8F%E8%AE%AE/">北京大学肖臻老师《区块链技术与应用》公开课笔记3——BTC共识协议篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  	<time datetime="2022-08-03T14:12:42.931Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">BTC-数据结构</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2022/08/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/08/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -456,8 +356,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

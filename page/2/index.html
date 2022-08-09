@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022/8 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/08/index.html">
+<meta property="og:url" content="http://example.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -152,286 +152,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-BTC-密码学原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/">BTC-密码学原理</a>
+    </h1>
+  
+
+        
+        <a href="/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/" class="archive-article-date">
+  	<time datetime="2022-08-03T09:43:36.888Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
+</a>
+        
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>BTC 主要用到了 <code>哈希</code> 和<code>签名</code> 两大技术</p>
+<h3 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h3><p>哈希函数需要满足三大特性：1、碰撞特性（collision resistance）；2、隐秘性（Hiding）；3、谜题友好（puzzle friendly）</p>
+<h5 id="1、碰撞特性（collision-resistance）"><a href="#1、碰撞特性（collision-resistance）" class="headerlink" title="1、碰撞特性（collision resistance）"></a>1、碰撞特性（collision resistance）</h5><p>输入两个输入值X，Y，经过哈希函数之后得到H(X)&#x3D;H(Y)，即为哈希碰撞</p>
+<p>假设输入x1，哈希值为H(x1)，此时很难找到一个x2，使得H(x1)&#x3D;H(x2)，则称该哈希函数防碰撞性强</p>
+<h5 id="2、隐秘性（Hiding）"><a href="#2、隐秘性（Hiding）" class="headerlink" title="2、隐秘性（Hiding）"></a>2、隐秘性（Hiding）</h5><p>哈希函数的计算过程是单向的，不可逆的。但前提要满足输入控件足够大，且分布均匀。</p>
+<h5 id="3、谜题友好（puzzle-friendly）"><a href="#3、谜题友好（puzzle-friendly）" class="headerlink" title="3、谜题友好（puzzle friendly）"></a>3、谜题友好（puzzle friendly）</h5><p>我们限定输出的哈希值在一定范围内，即H(block header + nonce) &lt; target （block header是区块链的链头），这个确定链头范围的过程即为挖矿。</p>
+<h3 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h3><p>在比特币中开户是在本地创立一个公私钥匙对</p>
+<p>公钥用来加密以及验证签名，私钥用来解密和签名</p>
+<p>公钥相当于银行账号，私钥相当于银行密码</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/08/BTC-%E5%8C%BF%E5%90%8D%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2022-08-08T15:02:25.681Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/08/03/BTC-%E5%AF%86%E7%A0%81%E5%AD%A6%E5%8E%9F%E7%90%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/08/BTC-%E9%97%AE%E7%AD%94/" class="archive-article-date">
-  	<time datetime="2022-08-08T09:12:36.190Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-08</time>
-</a>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/08/BTC-%E9%97%AE%E7%AD%94/">北京大学肖臻老师《区块链技术与应用》公开课笔记10——BTC问题篇</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/" class="archive-article-date">
-  	<time datetime="2022-08-07T08:52:19.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/">北京大学肖臻老师《区块链技术与应用》公开课笔记8——BTC比特币脚本篇</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2022-08-07T06:36:53.598Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/">北京大学肖臻老师《区块链技术与应用》公开课笔记8——BTC比特币脚本篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF/" class="archive-article-date">
-  	<time datetime="2022-08-06T14:59:56.821Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF/">北京大学肖臻老师《区块链技术与应用》公开课笔记7——BTC挖矿篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF%E9%9A%BE%E5%BA%A6/" class="archive-article-date">
-  	<time datetime="2022-08-06T08:54:17.110Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/06/BTC-%E6%8C%96%E7%9F%BF%E9%9A%BE%E5%BA%A6/">北京大学肖臻老师《区块链技术与应用》公开课笔记6——BTC挖矿难度篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/06/BTC-%E7%BD%91%E7%BB%9C/" class="archive-article-date">
-  	<time datetime="2022-08-06T08:06:02.491Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/06/BTC-%E7%BD%91%E7%BB%9C/">北京大学肖臻老师《区块链技术与应用》公开课笔记5——BTC网络篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/05/BTC-%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-  	<time datetime="2022-08-05T14:24:59.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/05/BTC-%E5%AE%9E%E7%8E%B0/">北京大学肖臻老师《区块链技术与应用》公开课笔记4——BTC共识协议篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/05/BTC-%E5%8D%8F%E8%AE%AE/" class="archive-article-date">
-  	<time datetime="2022-08-05T11:23:59.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/05/BTC-%E5%8D%8F%E8%AE%AE/">北京大学肖臻老师《区块链技术与应用》公开课笔记3——BTC共识协议篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  	<time datetime="2022-08-03T14:12:42.931Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/08/03/BTC-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">BTC-数据结构</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
-  
-
-    
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2022/08/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/08/page/2/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </nav>
   
 
@@ -455,9 +249,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
