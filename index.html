@@ -189,6 +189,13 @@
 <p>从应用层看，可以将各个不同用户的BTC混合在一起，使得追查变得混乱(Coin mixing)；从网络层看，可以采用多路径转发的方法，数据不直接发送出去，而是经过很多跳(洋葱路由的基本思想)。</p>
 </blockquote>
 <p>实际上，暴露用户隐私正是由于区块链的公开性和不可篡改性。不可篡改性对于隐私保护，实际上是灾难性的。</p>
+<h3 id="零知识"><a href="#零知识" class="headerlink" title="零知识"></a>零知识</h3><p><strong>零知识证明：一方（证明者）向另一方（验证者）证明某一个陈述是正确的，但不需要透露除该陈述是正确的之外的任何信息。</strong></p>
+<h3 id="同态隐藏"><a href="#同态隐藏" class="headerlink" title="同态隐藏"></a>同态隐藏</h3><p><img src="https://img-blog.csdnimg.cn/20200222104401150.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L011X1hpYW95ZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>例子：<br> <img src="https://img-blog.csdnimg.cn/20200222104415208.png" alt="在这里插入图片描述"><br>其中证明者为Alice，验证者为Bob。最简单的证明版本如下：<br>1.Alice将E(x)、E(y)发给Bob。（性质2，不可逆）<br>2.Bob通过收到的E(x)、E(y)计算得到E(X+Y)。（性质3，同态加法）<br>3.Bob进行验证E(x+y)和E(7)是否相等。若相等则验证通过，否则验证失败。（性质1，无碰撞)<br>缺陷：Bob可以暴力获取x与y的值。</p>
+</blockquote>
+<h3 id="零币和零钞"><a href="#零币和零钞" class="headerlink" title="零币和零钞"></a>零币和零钞</h3><p>零币在花费的时候，只需要用零知识证明来证明所花掉的币是系统中存在的某一个合法的币，但不用透露具体花掉的是系统中哪一个币。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200222104512208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L011X1hpYW95ZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 
       
 
