@@ -152,6 +152,148 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ETC-权益证明" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/08/15/ETC-%E6%9D%83%E7%9B%8A%E8%AF%81%E6%98%8E/">北京大学肖臻老师《区块链技术与应用》公开课笔记20——ETH权益证明篇</a>
+    </h1>
+  
+
+        
+        <a href="/2022/08/15/ETC-%E6%9D%83%E7%9B%8A%E8%AF%81%E6%98%8E/" class="archive-article-date">
+  	<time datetime="2022-08-15T09:47:21.753Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="POW机制能耗状况"><a href="#POW机制能耗状况" class="headerlink" title="POW机制能耗状况"></a>POW机制能耗状况</h3><p>比特币和以太坊目前采用的都是POW(工作量证明)机制，但这种方式一直为人所诟病，正在于其浪费电力资源的特点。</p>
+<p>视频罗列了BTC和ETC两者的用电量，这里不再阐述。</p>
+<p>既然消耗了那么多的电力资源那么，为什么不直接拼“钱”呢？现状是用钱购买矿机维护系统稳定，<strong>为什么不大家都将钱投入到系统开发和维护中，而根据投入钱的多少来进行收益分配呢</strong>？这就是<strong>权益证明</strong>的基本思想。</p>
+<h3 id="权益证明"><a href="#权益证明" class="headerlink" title="权益证明"></a>权益证明</h3><p>权益证明（Proof of Stake,PoS）共识机制，就是为了<strong>解决PoW局限性所衍生的另一种共识机制</strong>。</p>
+<p>PoS与PoW的差别在于，PoS用加密货币抵押量取代矿工算力的比拼，节点不需要花大笔钱买矿机或缴交巨额电费，相反的，他们必须花钱买加密货币，并将这些加密货币抵押在智能合约中。</p>
+<p>PoS共识机制下，大部份都是根据“币龄”以伪随机的方式，选择下一个区块的验证节点，简单来说就是，“抵押越多加密货币、抵押时间越长且距离上次获得记帐权越久的节点，获得下一次记帐权的机率越高”。</p>
+<p>当然，权益证明这么好，为什么实际中并未得到大规模应用呢？<br> 原因是其中仍然存在很多挑战，例如“双边下注”：</p>
+<blockquote>
+<p>如下图所示，区块链系统产生了分叉，存在两个区块A和B竞争主链时，采用权益证明的方法就是所有持币者对这两个区块投入币进行投票，从而决定哪一个区块成为最长合法链上的区块。假如有一个人，在A和B同时进行了下注。最终A区块胜出，那么他能够获得A区块相应收益，而在B区块进行投票放入的“筹码”也会被退还，这也就导致其每次都能获得收益。<br>由于一个人可以拥有多个账户，所以我们无法强迫一个人一次只能投向一个区块。而越有钱的人，通过“双边下注”得到的收益也就越多。<br> <img src="https://img-blog.csdnimg.cn/20200302170205512.png" alt="在这里插入图片描述"></p>
+</blockquote>
+<h3 id="以太坊拟采用的权益证明"><a href="#以太坊拟采用的权益证明" class="headerlink" title="以太坊拟采用的权益证明"></a>以太坊拟采用的权益证明</h3><p>以太坊中，准备采用的权益证明协议为Casper the Friendly Finality Gadget(FFG)</p>
+<p>Casper协议引入一个概念：Validator(验证者)，一个用户想要成为Validator，需要上交一笔“保证金”，这笔保证金会被系统锁定。Validator的职责是推动系统达成共识，投票决定哪一条链成为最长合法链，投票权重取决于保证金数目。<br>实际中，采用两次投票的方式：预投票和Commit 投票，规定每次投票结果都要获得2&#x2F;3以上的验证者同意。在实际中，针对其进行了一些修改，两次投票在实际中只需要一次即可。<br>矿工挖矿会获得出块奖励，而验证者也会得到相应奖励。当然，为了防止验证者的不良行为，规定其被发现时要受到处罚。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/08/15/ETC-%E6%9D%83%E7%9B%8A%E8%AF%81%E6%98%8E/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-ETC-难度调整" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/08/15/ETC-%E9%9A%BE%E5%BA%A6%E8%B0%83%E6%95%B4/">北京大学肖臻老师《区块链技术与应用》公开课笔记19——ETH难度调整篇</a>
+    </h1>
+  
+
+        
+        <a href="/2022/08/15/ETC-%E9%9A%BE%E5%BA%A6%E8%B0%83%E6%95%B4/" class="archive-article-date">
+  	<time datetime="2022-08-15T06:11:05.262Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="以太坊难度调整"><a href="#以太坊难度调整" class="headerlink" title="以太坊难度调整"></a>以太坊难度调整</h3><p>这里面有一系列公式，光看公式很难弄懂，建议配合视频观看</p>
+<h3 id="难度炸弹"><a href="#难度炸弹" class="headerlink" title="难度炸弹"></a>难度炸弹</h3><p><strong>为什么要设置难度炸弹？</strong></p>
+<p>根据以上以太坊难度调整算法可以看到，该算法可以很好地动态调整挖矿难度，从而保障系统整体出块时间维持在15s左右。但之前在挖矿算法的文章中有介绍到，以太坊在设计之初就计划要逐步从POW（工作量证明）转向POS（权益证明），而权益证明不需要挖矿。<br>从旁观者角度来看，挖矿消耗了大量电力、资金等，如果转入放弃挖矿，必然是一件好事。但从矿工的角度，花费了很大精力投入成本购买设备，突然被告知“不挖矿了”，这必然是一件很难接受的事情。而以太坊本身为一个分布式系统，其转入POS必须经过系统中大多数矿工认可才行，如果届时矿工联合起来转入POS，那么这一设计初衷就成了一江流水。<br>因此，以太坊在设计之初便添加了难度炸弹，迫使矿工转入POS。那么 <em><strong>如何促使矿工自愿升级软件，而非坚持POS呢？</strong></em></p>
+<p><img src="https://img-blog.csdnimg.cn/20200302113244686.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L011X1hpYW95ZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>可以看到，在以太坊早期时，区块号较小，难度炸弹计算所得值较小，难度调整级别基本上通过难度调整中的自适应难度调整部分决定，而随着越来越多区块被挖出，难度炸弹的威力开始显露出来，这也就使得挖矿变得越来越难，从而迫使矿工愿意转入POS。</p>
+<h3 id="难度炸弹调整"><a href="#难度炸弹调整" class="headerlink" title="难度炸弹调整"></a>难度炸弹调整</h3><p>上面提到，以太坊设想是通过埋设难度炸弹迫使矿工届时愿意转入权益证明，但现实中有一句话：“理想很丰满，现实很骨感”。在实际应用中，权益证明的方式仍然并不成熟，目前以太坊共识机制仍然是POW，依然需要矿工参与挖矿维护以太坊系统的稳定。也就是说，转入POS的时间节点被一再推迟，虽然挖矿变得越来越难，系统出块时间开始逐渐变长，但矿工仍然需要继续挖矿。<br>在上面难度炸弹的公式中，有人应该注意到了第二项中的fake block number，该数仅仅为对当前区块编号减去了三百万，也就是相当于将区块编号回退了三百万个。那么，在前三百万个区块的时候，这个fake block number就是负数吗？<br>答案是否定的。实际上，在以太坊最初的设计中，并没有第二个公式。也就是说，最初就是简单地直接用区块编号除以100000。而在转入权益证明时间节点一再推迟后，以太坊系统采取了将区块编号回退三百万个区块的方法来降低挖矿难度，当然，为了保持公平，也将出块奖励从5个以太币减少到了3个以太币，这也是fake block number这一项出现的原因。<br><img src="https://img-blog.csdnimg.cn/20200302113506837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L011X1hpYW95ZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/08/15/ETC-%E9%9A%BE%E5%BA%A6%E8%B0%83%E6%95%B4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ETC-挖矿算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -790,170 +932,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2022/08/08/BTC-%E9%97%AE%E7%AD%94/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-BTC-分叉" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/">北京大学肖臻老师《区块链技术与应用》公开课笔记9——BTC分叉篇</a>
-    </h1>
-  
-
-        
-        <a href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/" class="archive-article-date">
-  	<time datetime="2022-08-07T08:52:19.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="硬分叉-hard-fork"><a href="#硬分叉-hard-fork" class="headerlink" title="硬分叉(hard fork)"></a>硬分叉(hard fork)</h3><pre><code>什么情况会出现硬分叉？
-对比特币协议增加新协议，扩展新功能，未升级软件的旧节点不认可这些修改，会认为这些特性是非法的。这也就是对比特币协议内容产生分歧，从而导致分叉。硬分叉的一个典型例子，就是对比特币区块大小的修改（之前有提到过，BTC区块大小限制1MB，但是否合适存在争议）。
-</code></pre>
-<p>在BTC系统中，区块大小最大为1MB，可以包含的交易最大数量为4000笔左右。而一个区块产生大概需要10min左右，也就是说，整个比特币系统，平均每10分钟最多只能处理4000笔交易(平均每秒7笔交易)，相比目前银行等金融机构每秒数十万数百万的交易量来说，根本不在一个数量级上，严重影响吞吐率和交易处理(即上链)时间(因为交易太多，无法写入只能等待下一个区块)。<br>所以，有人便认为可以增大区块大小，使得一个区块中可以包含的交易数量增多，在此，我们假设将区块大小从1MB增大至4MB。</p>
-<pre><code>假设系统中大多数节点更新了软件，少数节点仍然遵从1MB限制的协议(注意，这里大多数和少数是按照算力来区分的，和账户数量无关)。即：新节点认为区块大小最大4MB，旧节点认为区块大小最大1MB，且新节点占据大多数。
-</code></pre>
-<p>假设1为当前区块链，此时软件更新，有一个新节点挖出了一个区块如2。但对于旧节点来说，该区块为一个非法区块，旧节点不会对其认可，从而，旧节点仍然从其前一个区块开始挖矿，如3.<br>需要注意的是，旧节点挖出的区块，新节点是认可的(并未超过4MB限制)，所以对旧节点来说，3中下面的链才是合法链，而对新节点来说，这两条链都是合法的链。因为新节点算力强，所以出现4中情况可能性大。对于新节点来说，上面的为最长合法链，新节点便都会沿着上面的链继续挖；对于旧节点来说，上面的链无论多么长，都是一条非法链，不会认可该链，所以旧节点就会沿着下面的链继续挖矿。</p>
-<p>此时，就出现了新节点永远沿着上面的链挖矿，旧节点永远沿着下面的链挖矿，由于新节点算力足够强，所以形成两条永远都在延伸且平行的链。当然，上面的链，也有可能会挖出大小在1MB内的小区块，但对旧节点来说，该链上存在非法区块，不会认可该链。可见，这种分叉是持久性的。<br>只要这部分旧节点永远不更新软件，下面的链便永远不会消失。</p>
-<blockquote>
-<p>1.BTC社区中有些人很保守，不愿意加大区块大小 2.区块大小并非越大越好，在网络篇中提到，比特币网络传输为”尽力而为”，区块加大会造成传输变慢等问题。 3.单纯增加区块大小，对交易数量的增加远不能达到数量级的提升。</p>
-</blockquote>
-<p>出现hard fork后，便变成了两条平行的链，也就造成了社区分裂。社区中有一部分人，会认为下面的链才是”正统“(根正苗红)，各个链上的货币独立。</p>
-<blockquote>
-<p>实际上，这个事情真正出现过。后续会介绍以太坊，以太坊历史上的一件大事就是硬分叉事件。以太坊称为ETH，但目前看到的ETH已经不是最初的ETH了，以太坊在历史上发生过硬分叉，另一个链称为ETC（和过高速公路那个ETC可半毛钱关系都没有呀）。实际上，ETC才是以太坊设计原本的协议，而ETH是黑客攻击ETH上一个智能合约THE DAO后进行回滚的协议链(将黑客攻击偷取的以太币采用硬分叉方式回滚回到另一智能合约，然后退还给真正拥有者)。<br>但是这次硬分叉的后果，由于有人不愿意这么做，造成了以太坊社区的分裂。实际上，虽然ETC不如ETH又名，但实际它也是目前一种主流货币。<br>分叉之初，由于两个链分叉造成了互相影响，产生了很多麻烦。比如：在ETH链上有一笔转账B-&gt;C，有人便在ETC链上回放，将ETC链上的货币页转给了C(C收到两笔钱)。后来，对两条链各添加了一个chainID，将两个链区分开，才使得这两条链真正分开。</p>
-</blockquote>
-<h3 id="软分叉（soft-fork）"><a href="#软分叉（soft-fork）" class="headerlink" title="软分叉（soft fork）"></a>软分叉（soft fork）</h3><p>如果对BTC协议添加限制，使得原本合法交易在新交易中不合法，便会形成软分叉。</p>
-<p>同样，有人想将区块大小调大，也就会有人思考调小的好处。在这里，我们<strong>假设将区块大小从1MB减小至0.5MB</strong>(实际中，1MB已经足够小，不会调小了).</p>
-<h3 id="系统中可能出现软分叉的情况及其实例"><a href="#系统中可能出现软分叉的情况及其实例" class="headerlink" title="系统中可能出现软分叉的情况及其实例"></a>系统中可能出现软分叉的情况及其实例</h3><ul>
-<li><p>给某些目前协议中未规定的域赋予新的含义或规则。<br>最经典的就是，铸币交易中CoinBase域。在CoinBase域中写入任何内容都可以，没有任何规定。之前，在介绍挖矿时，提到挖矿本质是调整block header中的nonce，但其本身只有4个字节，搜索空间太小。所以实际使用中，将CoinBase域前8个字节作为另一个extra nonce，此时搜索空间从原本2^32 增长到2^96，对于目前挖矿难度来说已经足够。<br>但CoinBase中并不是只有8个字节，还剩下很多空间。有人便提出将其作为UTXO(当前还没花掉的交易结合，在数据结构篇中有详细介绍，还记得吗？)集合的根哈希值。目前UTXO是全节点自己在本地为了方便查询自行维护的，但UTXO内容并未写入区块链（还记得Merkle proof吗？Merkle proof用于验证某个交易是否在区块中，Merkle proof的交易信息是写入区块链的。）<br>由于UTXO存在本地，如果查询某账户余额，轻节点便需要询问全节点，全节点根据UTXO中信息可以计算得到账户余额，但如何确保全节点给的数据可信？由于直接修改block header会造成硬分叉，有人便提出了以上的方案(该域刚好无人用)。<br>可以看到，旧节点认可新节点的区块，但新节点对于旧节点CoinBase域检查时候，发行并没有这个UTXO的根哈希值，不会认可其发布的区块，所以这是软分叉。</p>
-</li>
-<li><p>P2SH：Pay to Script Hash<br>还记得上一篇比特币脚本中该功能吗？上一篇中提到过，最初比特币版本中没有该功能，后来通过软分叉方法加入了进去。</p>
-</li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
-<li>soft fork<br>特点：只要系统中拥有半数以上算力节点更新软件，系统就不会产生永久性分叉</li>
-<li>hard fork<br>特点：必须系统中所有节点更新软件，系统才不会产生永久性分叉</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/08/07/BTC-%E5%88%86%E5%8F%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-BTC-比特币脚本" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/">北京大学肖臻老师《区块链技术与应用》公开课笔记8——BTC比特币脚本篇</a>
-    </h1>
-  
-
-        
-        <a href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/" class="archive-article-date">
-  	<time datetime="2022-08-07T06:36:53.598Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="输入输出脚本的执行"><a href="#输入输出脚本的执行" class="headerlink" title="输入输出脚本的执行"></a>输入输出脚本的执行</h3><p>如图所示，为脚本执行流程。在早期，直接将两个脚本按照如图顺序(input script在前，output script在后) 拼接后执行，后来考虑到安全性问题，两个脚本改为分别执行：先执行input script，若无出错，再执行output script。<br>如果脚本可以顺利执行，最终栈顶结果为true，则验证通过，交易合法；如果执行过程中出现任何错误，则交易非法。<br>如果一个交易有多个输入脚本，则每个输入脚本都要和对应的输出脚本匹配执行，全部验证通过才能说明该交易合法。</p>
-<h3 id="输入输出脚本的几种形式"><a href="#输入输出脚本的几种形式" class="headerlink" title="输入输出脚本的几种形式"></a>输入输出脚本的几种形式</h3><ul>
-<li>P2PK形式(Pay to public key)</li>
-</ul>
-<blockquote>
-<p>特点：输出脚本直接给出收款人公钥。(CHECKSIG为检查签名操作)</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/2020021819451364.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L011X1hpYW95ZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>执行过程(将两个脚本拼接起来)：</p>
-<blockquote>
-<p>注：实际执行已经不再拼接两个脚本</p>
-</blockquote>
-<p><strong>多重签名</strong></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/08/07/BTC-%E6%AF%94%E7%89%B9%E5%B8%81%E8%84%9A%E6%9C%AC/">展开全文 >></a>
         </p>
       
 
